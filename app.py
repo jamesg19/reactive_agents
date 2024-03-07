@@ -1,6 +1,6 @@
 # Definir los estados, percepciones, reglas y acciones
 estados = ['sin-moneda', 'recibi-moneda', 'servido-c1', 'servido-c2', 'servido-c3']
-percepciones = ['moneda', 'c1', 'c2', 'c3']
+percepciones = ['moneda', 'c1', 'c2', 'c3', 'servido']
 reglas = {
     "sin-moneda": "pedir-moneda",
     "recibi-moneda": "pedir-codigo",
@@ -50,4 +50,4 @@ while True:
     accion = reglas[estado]
     texto_accion = acciones[accion]
     print(texto_accion)
-    print("Estado: ",estado)
+    print("Estado: ", estado)
